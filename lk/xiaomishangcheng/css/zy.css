@@ -1,0 +1,270 @@
+body {
+    background: #fbfaf8;
+}
+.head{
+	height: 36px;
+	border-bottom: 1px solid #eae6e2;
+}
+.mi,.wrap,.max{
+	margin:0 auto;
+	width: 1200px;
+}
+.list>li{
+	float: left;
+	line-height: 36px;
+}
+.list li a{
+	 color:#613f23;
+}
+.list .sep{
+	margin: 0 4px;
+}
+.pc{
+	float: right;
+}
+.login{
+	/*padding: 0 8px;*/
+}
+.u-sep{
+	padding-right:17px;
+}
+.pc>li{
+	float: left;
+	line-height: 36px;
+	margin: 0 8px;	
+}
+.pc li a{
+	 color:#613f23;
+}
+.s{
+	position: relative;
+}
+.men{ 
+    display: none;
+    position: absolute;  
+   right:-115px;
+    top: 36px;
+    width: 176px;
+    height: 120px;
+    background:#fff;
+}
+.src{
+    float: left;
+    margin:4px;
+}
+.src p{ 
+   margin-top:-4px;
+    clear: left;
+    text-align: center;
+}
+.s:hover .men{
+    display: block;
+    z-index: 1000;  
+}
+.txt{
+	position: absolute;
+	top: 11px;
+	right:52px;
+	width: 17px;
+	height: 15px;
+	background: url(../img/sprite.png) 0px -158px  no-repeat;
+}
+.tt{
+	position: absolute;
+	top: 12px;
+	right: 26px;
+	width: 12px;
+	height: 12px;
+	background: url(../img/sprite.png) 0px -181px  no-repeat;
+
+}
+/**/
+/**/
+.header{
+	margin-top: 10px;
+}
+.search{
+	float: right;
+	width: 300px;
+	height: 38px;
+}
+.search input{
+	width: 300px;
+	height: 38px;
+	border-radius: 6px;
+	border: 1px solid gray;
+	margin-top: 8px;	
+}
+.header{
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 2px solid #fa7a20;
+}
+.nav{
+	border-radius:3px;
+	padding-left:248px;
+}
+.nav li{
+     float: left;   
+     line-height: 44px;
+}
+.nav li a{
+	display:block;
+    padding:0 22px;
+    font:16px/44px 'microsoft yahei',STXihei;_font:700 16px/28px '宋体','黑体';
+    color:#fff;
+}
+.nav a:hover{
+	background:#f16300;
+}
+.max{	
+	height: 44px;
+	margin-top: 10px;
+	background: #fa7a20;
+}
+/**/
+/**/
+.review{
+	width: 1200px;
+	margin: 0 auto;
+}
+.book{
+	margin-top: 10px;
+	float: left;
+	width: 242px;
+    height: 566px;
+    background: #f4f2ef;
+    overflow: hidden;
+}
+.book li{
+	width: 120px;
+	height: 48px;
+	float: left;
+    border-right: 1px solid #dbd6d2;
+  /*padding-top: 5px;*/
+}
+.book li a{
+      display: block;
+    width: 80px;
+    height: 40px;
+    padding: 8px 20px 0;
+}
+.book .ttl{
+	height: 35px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #333;
+    background:#e7e2dd;
+}
+.book span{
+	display: block;
+}
+.book .it1{
+	background: #e7e2dd;
+}
+.picture{
+	margin-top: 10px;
+	margin-left: 10px;
+	display: block;
+	float: left;
+}
+.picture h3{
+	padding-left: 15px;
+     width:688px;
+     height: 38px;
+     border-bottom:1px solid gray;
+     line-height: 38px;
+}
+/*.bargin{
+	height:225px;
+    margin-top: 3px;
+    overflow: hidden;
+}*/
+.title{
+	display: block;
+    max-height: 36px;
+   /* margin: 3px 10px 5px;*/
+    font-size: 15px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.ab{
+	margin-top: 25px;
+}
+.novel{
+	position: relative;
+	right: -125px;
+	top: -145px;
+	border: 1px solid red;
+	width: 184px;
+}
+.author{
+	width: 67px;
+	height: 15px;
+	background: url(../img/sprite-24.png) 0px -257px  no-repeat;
+}
+.ab li{
+	float: left;
+   width: 350px;
+   height: 186px;
+   border: 1px solid red;
+}
+.btn{
+	position: absolute;
+	right: 130px;
+	top: 133px;
+	width: 92px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	color: #fff;
+    border: 1px solid #3d76de;
+    background: #4d87de;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 2px 2px rgba(77,153,22,.1);
+}
+.author1{
+	padding: 3px 0;
+    color: #999;
+}
+.kit{
+	position: relative;
+}
+.kit a img{
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.em{
+	margin-left:-1px;
+	padding: 0 15px;
+}
+.price{
+	color: #333;
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+.news{
+	display: inline-block;
+    width: 702px;
+    height: 32px;
+    border: 1px solid red;
+    margin-top: 15px;
+}
+.news h4{
+	float: left;
+	width: 95px;
+	height: 21px;
+	border: 1px solid red;
+	margin-top: 4px;
+	text-align: center;
+}
+.news h5{
+	float: left;
+	width: 295px;
+	height: 21px;
+	border: 1px solid red;
+	margin-top: 4px;
+	text-align: center;
+}

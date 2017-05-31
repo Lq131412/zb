@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab切换</title>
+</head>
+<body>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .outer{
+      width: 600px;
+      height: 350px;
+      border: 1px solid #000;
+      margin: 100px auto 0;
+    }
+    .nav{
+      overflow: hidden;
+    }
+   .nav li{
+      float: left;
+      border: 1px solid red;
+      box-sizing: border-box;
+      width: 300px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 30px;
+      list-style: none;
+   }
+   .content{
+        height: 300px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 40px;
+        display: none;
+   }
+   .show{
+      display: block;
+   }
+    </style>
+</body>
+     <div class="outer">
+             <ul class="nav">
+                <li class="active">上一张</li>
+                <li>下一张</li>
+                
+             </ul>
+          <div class="content show"><img src="img/l13.png" alt=""></div>
+          <div class="content"><img src="img/l15.jpg" alt=""</div>
+          <div class="content"><img src="img/l14.png" alt=""</div>
+     </div>
+     <script>
+       var lis=document.getElementsByTagName("li");
+       var boxs=document.getElementsByClassName("content");
+       console.log(boxs);
+      function clear(){
+                for(var i=0;i<lis.length;i++){
+                	lis[i].className="";
+                	boxs[i].className="content";
+                }
+         }    
+       for(var i=0;i<lis.length;i++){
+                  lis[i].index=i;
+                  lis[i].onclick=function(){
+                    clear();
+                    this.className='';
+                    console.log(this.index);
+                    boxs[this.index].className="content  show";
+                  }
+       }
+     </script>
+</html>

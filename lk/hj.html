@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>简易日历</title>
+	<style type="text/css">
+		body {
+			background-color:skyblue;
+		}
+		#tab{
+			border:1px solid #CCC;
+			margin:50px auto;
+			width:340px;
+			background-color:#DDD;	
+			text-align:center;
+		}
+		#tab ul li{
+			float:left;
+			list-style-type: none;
+			width:70px;
+			height:65px;
+			border:1px solid #588;
+			margin:5px;
+			background-color: #222;     
+			color:white;
+			line-height:8px;
+		}
+	  #tab .active{
+			color:#C66;
+			background-color: #fff;
+		}
+		.text{
+			clear:both;
+			margin:10px 40px;
+			background-color: #EEE ;
+			padding:2px;
+			line-height:14px;
+		}	
+	</style>
+	</head>
+<body>
+	<div id="tab">
+		<ul>
+			<li class="active"><h2>1</h2><p>JAN</p></li>
+			<li><h2>2</h2><p>FER</p></li>
+			<li><h2>3</h2><p>MAR</p></li>
+			<li><h2>4</h2><p>APR</p></li>
+			<li><h2>5</h2><p>MAY</p></li>
+			<li><h2>6</h2><p>JUN</p></li>
+			<li><h2>7</h2><p>JUL</p></li>
+			<li><h2>8</h2><p>AUG</p></li>
+			<li><h2>9</h2><p>SEP</p></li>
+			<li><h2>10</h2><p>OCT</p></li>
+			<li><h2>11</h2><p>NOV</p></li>
+			<li><h2>12</h2><p>DEC</p></li>	
+		</ul>
+	<div class="text">
+			<h2>1月活动</h2>
+			<h4>春游踏青活动</h4>
+		</div>
+	</div>
+	<script type="text/javascript">	
+			var tab=document.getElementById('tab');
+			var lis=tab.getElementsByTagName('li');
+			var box=tab.getElementsByTagName('div')[0];
+			var arr=['春游踏青活动','野外露营活动','西藏自驾游','海南三亚洗白白','泰国看人妖','韩国整容','非洲阳光浴','登钓鱼岛钓鱼','帝都体验雾霾','长城体验人挤人','陪你去东北看雪','生蛋生蛋快乐'];
+			for(var i=0;i<lis.length;i++){
+				    lis[i].index=i;
+				    lis[i].onmouseover=function(){
+					for(var j=0;j<lis.length;j++){
+						lis[j].className='';
+					}
+					this.className='active';
+					box.innerHTML="<h2>"+(this.index+1)+"月活动</h2><p>"+arr[this.index] +"</p>";
+				}
+			}	
+	</script>
+</body>
+</html>
